@@ -17,6 +17,6 @@ DataMapper.auto_upgrade!
 
 
 get '/' do
-	@suicide_data = Suicide_Data.all
+	# @suicide_data = Suicide_Data.all
 	erb :index	
 end
