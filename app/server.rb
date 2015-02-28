@@ -18,5 +18,7 @@ DataMapper.auto_upgrade!
 
 get '/' do
 	# @suicide_data = Suicide_Data.all
+	@id = Suicide_Data.first.id
+	@region = Suicide_Data.first.region
 	erb :index	
 end
